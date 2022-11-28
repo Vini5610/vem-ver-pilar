@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Estrutura -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vem Ver Pilar - Contato</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="shortcut icon" href="img/favjc.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/bc48bd619e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <a href="index.html"><img src="img/headerlogo.png" alt=""></a>
+
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+                <ul>
+                    <li><span class="span1">AO</span> Vivo</li>
+                    <li><a href="programacao.html">Programação</a></li>
+                    <li><a href="radio.html">A Rádio</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="podcasts.html">Podcasts</a></li>
+                    <li id="divisor"></li>
+                    <li class="active"><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="bodycontent">
+        <div class="bodycontent-titulo">
+            <i class="fa-solid fa-envelope"></i>
+            <h1>Formulário de Contato</h1>
+        </div>
+        <form class="bodycontent-form">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <name for="message">Mensagem</name>
+            <textarea name="message" id="message" placeholder="Escreva sua mensagem aqui." required></textarea>
+
+            <button type="submit">Enviar</button>
+       </form>
+    </div>    
+
+    <div id="btnTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+    <script src="subir.js"></script>
+
+    <footer>
+        <img src="img/logofooter.png" alt="">
+
+        <div class="column">
+            <ul>
+                <li class="li-título">Navegação</li>
+                <li><a href="index.html">Home <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                <li><a href="programacao.html">Programação <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </li>
+                <li><a href="noticias.html">Notícias <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                <li><a href="podcasts.html">Podcasts <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <ul>
+                <li class="li-título">Sobre nós</li>
+                <li><a href="https://youtu.be/xtPEmyPV-T4" target="_blank">Pitch <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                <li><a href="radio.html">A Rádio <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                <li><a href="https://docs.google.com/document/d/1Y45Lh7ssJxO7NbwlTwpHL4qOjv15ZXZkiLPIafpuUF8/edit?usp=sharing" target="_blank">Nossa Equipe <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <ul>
+                <li class="li-título">Suporte</li>
+                <li><a href="contato.html">Contato <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                <li><a href="mailto:pvemverpilar@gmail.com" target="_blank">Gmail <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                <li><a href="#">FAQ <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-redes">
+            <a href="https://instagram.com/vemverpilar?igshid=ZjA0NjI3M2I=" target="_blank">
+                <i class="fa-brands fa-instagram"></i></a>
+            <a class href="mailto:pvemverpilar@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://youtube.com/channel/UCkRbbXbDnAkgNwmys_JSPRA" target="_blank">
+                <i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>

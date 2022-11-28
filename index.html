@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Estrutura -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vem Ver Pilar - Início</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favjc.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/bc48bd619e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <a href="index.html"><img src="img/headerlogo.png" alt=""></a>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+
+                <ul>
+                    <li><span class="span1">AO</span> Vivo</li>
+                    <li><a href="programacao.html">Programação</a></li>
+                    <li><a href="radio.html">A Rádio</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="podcasts.html">Podcasts</a></li>
+                    <li id="divisor"></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main class="header-main">
+            <div class="header-main-top">
+                <div class="header-img">
+                    <a href="radio.html">
+                        <img id="mega" src="img/Meiomega.png" alt="">
+                        <img id="raio" src="img/Raios.png" alt="">
+                    </a>
+                </div>
+                <div class="header-main-text">
+                    <h1>Mostrando ao mundo, os tesouros do pilar</h1>
+
+                    <div class="header-main-buttons">
+                        <div class="header-button">
+                            <a class="button-text" href="https://instagram.com/vemverpilar?igshid=ZjA0NjI3M2I="
+                                target="_blank">Instagram</a>
+                            <a href="https://instagram.com/vemverpilar?igshid=ZjA0NjI3M2I="
+                                target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <div class="header-button">
+                            <a  class="button-text" href="https://youtube.com/channel/UCkRbbXbDnAkgNwmys_JSPRA" target="_blank">Youtube</a>
+                            <a href="https://youtube.com/channel/UCkRbbXbDnAkgNwmys_JSPRA" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </header>
+
+    <main class="programacao-main">
+        <section class="dias">
+            <div class="container-divisor">
+                <span class="divisor-main">
+                    <h1>Programação</h1>
+                </span>
+            </div>
+            <ul>
+                <li>SEG</li>
+                <li>TER</li>
+                <li>QUA</li>
+                <li>QUI</li>
+                <li class="sexta">SEX</li>
+                <li>SAB</li>
+                <li>DOM</li>
+            </ul>
+        </section>
+
+        <section class="programas">
+            <div class="programa">
+                <div class="foto">
+                    <img src="img/Informa.png" alt="">
+                </div>
+
+                <div class="descricao">
+                    <h2>12:00/19:00 - INFORMA PILAR!</h2>
+                    <p class="apresentador">com Luiza Carvalho</p>
+                    
+                    <P class="text">Levando notícias para toda a população, a toda hora em qualquer lugar.</P>
+
+                    <div class="tags">
+                        <p class="tag-pilar">
+                            Pilar
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="programa">
+                <div class="foto">
+                    <img src="img/Música.png" alt="">
+                </div>
+
+                <div class="descricao">
+                    <h2>12:30/20:00 - MÚSICAS MAIS TOCADAS</h2>
+                    <p class="apresentador">com Victor Barbosa</p>
+                    
+                    <p class="text">Um momento para descansar e aproveitar as músicas mais famosas da atualidade</P>
+
+                    <div class="tags">
+                        <p class="tag-pilar">
+                            Pilar
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="programa">
+                <div class="foto">
+                    <img src="img/Vemverpilarpod.png" alt="">
+                </div>
+
+                <div class="descricao">
+                    <h2>12:00/19:00 - VEM VER PILAR</h2>
+                    <p class="apresentador">com Maria Gabriella</p>
+                    
+                    <p class="text">Apresentação do nosso projeto, Vem Ver Pilar, um projeto para a comunidade</P>
+
+                    <div class="tags">
+                        <p class="tag-alameda">
+                            Alameda
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="programacao-button">
+                <a href="programacao.html">Programação Completa</a>
+            </div>
+
+        </section>
+    </main>
+
+
+
+    <div class="parallax-1"></div>
+
+    <main class="main-noticias">
+        <div class="noticias">
+            <section class="section-noticias">
+
+                <div class="noticia">
+                    <div class="imagem-noticia"><img src="img/noticia5.jpg" alt=""></div>
+                    <div class="texto-noticia">
+                        <p class="sub-titulo">Notícia |   <span>27/04/2022 às 15:00</span></p>
+                        <h1><span class="titulo">Unidades municipais de ensino do Pilar recebem geladotecas doadas pelo Porto do Recife</span>
+                        </h1>
+                        <p>Em celebração ao Dia Mundial do Livro, comemorado no dia 23 de abril, o Porto do Recife doou duas geladotecas cheias de livros para duas unidades municipais de ensino do Pilar, nesta quarta-feira (27) ...</p>
+                    </div>
+                </div>
+
+                <div class="noticia">
+                    <div class="imagem-noticia"><img src="img/noticia2.jpg" alt=""></div>
+                    <div class="texto-noticia">
+                        <p class="sub-titulo">Evento |   <span>12/11/2022 às 11:54</span></p>
+                        <h1><span class="titulo">REC’n’Play está de volta após dois anos de pandemia e começa nesta quarta</span>
+                        </h1>
+                        <p>Evento gratuito será realizado no Recife Antigo com mais de 600 atividades gratuitas e shows. As inscrições seguem abertas para todos os públicos ...</p>
+                    </div>
+                </div>
+
+                <div class="noticia">
+                    <div class="imagem-noticia"><img src="img/noticia7.jpg" alt=""></div>
+                    <div class="texto-noticia">
+                        <p class="sub-titulo">Notícia |   <span>28/07/2020 às 15:45</span></p>
+                        <h1><span class="titulo">Comunidade do Pilar ganha Upinha com serviços médicos e consultórios</span>
+                        </h1>
+                        <p>Foi inaugurada nesta terça-feira (28) a Upinha Nossa Senhora do Pilar. Localizada na comunidade do Pilar, no Recife Antigo, a unidade vai garantir ampliação dos serviços e novos espaços para os usuários da comunidade ...</p>
+                    </div>
+                </div>
+
+                <div class="noticias-button">
+                    <a href="noticias.html">Veja Mais</a>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <div class="parallax-2">
+        <div class="parallax-text">
+            <span>
+                Vem Ver Pilar, um projeto que visa por uma comunidade mais unida
+            </span>
+
+            <div class="parallax-button">
+                <a href="radio.html">Saiba Mais</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="infos">
+        <div class="infos-left">
+            <div class="infos-section">
+                <a class="infos-section-botoes" href="#"><i class="fa-solid fa-phone-flip"></i></a>
+                <div class="infos-texts">
+                    <span>Fale Conosco</span>
+                    <p>(81) 99377-1840</p>
+                </div>
+            </div>
+
+            <div class="infos-section">
+                <a class="infos-section-botoes" href="mailto:pvemverpilar@gmail.com" target="_blank"><i
+                        class="fa-solid fa-envelope"></i></a>
+                <div class="infos-texts">
+                    <span><a href="mailto:pvemverpilar@gmail.com" target="_blank">Enviar Email</a></span>
+                    <p>pvemverpilar@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="infos-section">
+                <a class="infos-section-botoes" href="https://instagram.com/vemverpilar?igshid=ZjA0NjI3M2I="
+                    target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <div class="infos-texts">
+                    <span><a href="https://instagram.com/vemverpilar?igshid=ZjA0NjI3M2I=" target="_blank">Siga nossa
+                            Página</a></span>
+                    <p>@vemverpilar</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="map"></div>
+        <script src="mapa.js"></script>
+    </div>
+
+    <div id="btnTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+    <script src="subir.js"></script>
+
+    <footer>
+        <img src="img/logofooter.png" alt="">
+
+        <div class="column">
+            <ul>
+                <li class="li-título">Navegação</li>
+                <li><a href="index.html">Home <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                <li><a href="programacao.html">Programação <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </li>
+                <li><a href="noticias.html">Notícias <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                <li><a href="podcasts.html">Podcasts <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <ul>
+                <li class="li-título">Sobre nós</li>
+                <li><a href="https://youtu.be/xtPEmyPV-T4" target="_blank">Pitch <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                <li><a href="radio.html">A Rádio <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                <li><a href="https://docs.google.com/document/d/1Y45Lh7ssJxO7NbwlTwpHL4qOjv15ZXZkiLPIafpuUF8/edit?usp=sharing" target="_blank">Nossa Equipe <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <ul>
+                <li class="li-título">Suporte</li>
+                <li><a href="contato.html">Contato <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                <li><a href="mailto:pvemverpilar@gmail.com" target="_blank">Gmail <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                <li><a href="#">FAQ <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-redes">
+            <a href="https://instagram.com/vemverpilar?igshid=ZjA0NjI3M2I=" target="_blank">
+                <i class="fa-brands fa-instagram"></i></a>
+            <a class href="mailto:pvemverpilar@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://youtube.com/channel/UCkRbbXbDnAkgNwmys_JSPRA" target="_blank">
+                <i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Estrutura -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vem Ver Pilar - Notícias</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="css/noticias.css">
+    <link rel="shortcut icon" href="img/favjc.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/bc48bd619e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <a href="index.html"><img src="img/headerlogo.png" alt=""></a>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+
+                <ul>
+                    <li><span class="span1">AO</span> Vivo</li>
+                    <li><a href="programacao.html">Programação</a></li>
+                    <li><a href="radio.html">A Rádio</a></li>
+                    <li class="active"><a href="noticias.html">Notícias</a></li>
+                    <li><a href="podcasts.html">Podcasts</a></li>
+                    <li id="divisor"></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-noticias">
+        <div class="pesquisa">
+            <form action="">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" name="pesquisar" id="" placeholder="Faça a sua busca">
+            </form>
+        </div>
+
+        <div class="noticias">
+            <section>
+                <div class="noticia">
+                    <div class="imagem-noticia"><img src="img/noticia1.jpg" alt="">
+                    </div>
+                    <div class="texto-noticia">
+                        <p class="sub-titulo">Notícia |   <span>02/04/2020 às 19:56</span></p>
+                        <h1><span class="titulo">Comunidade do Pilar: uma guerra contra o vírus e a pobreza.</span>
+                        </h1>
+                        <p>O isolamento imposto pela crise do coronavírus revela ainda mais a desigualdade social que atinge comunidades como o Pilar, no Bairro do Recife. Da Rua Primavera, transversal à Rua do Brum, é possível ver a sede da prefeitura ...</p>
+                    </div>
+
+                </div>
+                <div class="noticia">
+                    <div class="imagem-noticia"><img src="img/noticia2.jpg" alt=""></div>
+                    <div class="texto-noticia">
+                        <p class="sub-titulo">Evento |   <span>12/11/2022 às 11:54</span></p>
+                        <h1><span class="titulo">REC’n’Play está de volta após dois anos de pandemia e começa nesta quarta</span>
+                        </h1>
+                        <p>Evento gratuito será realizado no Recife Antigo com mais de 600 atividades gratuitas e shows. As inscrições seguem abertas para todos os públicos ...</p>
+                    </div>
+                </div>
+
+                <div class="noticia">
+                    <div class="imagem-noticia"><img src="img/noticia3.jpg" alt=""></div>
+                    <div class="texto-noticia">
+                        <p class="sub-titulo">Notícia |   <span>19/09/2019 às 10:00</span></p>
+                        <h1><span class="titulo">Comunidade do Pilar, em Recife (PE), luta por reconhecimento desde a sua fundação</span>
+                        </h1>
+                        <p>Bairro por anos foi chamado de Fora-de-Portas, por ficar em região limítrofe recifense. O lugar por muito tempo era chamado de C, já que até 1630, o Recife oficialmente terminava no início da Rua do Bom Jesus ...</p>
+                    </div>
+                </div>
+
+                <div class="noticia">
+                    <div class="imagem-noticia"><img src="img/noticia4.jpg" alt=""></div>
+                    <div class="texto-noticia">
+                        <p class="sub-titulo">Notícia |   <span>14/03/2022 às 21:15</span></p>
+                        <h1><span class="titulo">Achados arqueológicos na Comunidade do Pilar, no Bairro do Recife, revelam segredos da história de Pernambuco</span>
+                        </h1>
+                        <p>Cerca de 150 mil vestígios arqueológicos, entre ossadas e objetos, e parte das ruínas do antigo Forte de São Jorge foram encontrados em escavações na região ...
+                        </p>
+                    </div>
+                </div>
+
+                <div class="noticia">
+                    <div class="imagem-noticia"><img src="img/noticia5.jpg" alt=""></div>
+                    <div class="texto-noticia">
+                        <p class="sub-titulo">Notícia |   <span>27/04/2022 às 15:00</span></p>
+                        <h1><span class="titulo">Unidades municipais de ensino do Pilar recebem geladotecas doadas pelo Porto do Recife</span>
+                        </h1>
+                        <p>Em celebração ao Dia Mundial do Livro, comemorado no dia 23 de abril, o Porto do Recife doou duas geladotecas cheias de livros para duas unidades municipais de ensino do Pilar, nesta quarta-feira (27) ...</p>
+                    </div>
+                </div>
+
+                <div class="noticia">
+                    <div class="imagem-noticia"><img src="img/noticia6.jpg" alt=""></div>
+                    <div class="texto-noticia">
+                        <p class="sub-titulo">Notícia |   <span>16/06/2015 às 06:45</span></p>
+                        <h1><span class="titulo">Comunidade do Pilar cobra habitacional à Prefeitura do Recife</span>
+                        </h1>
+                        <p>Obra teve início em 2010, sofreu atraso e prefeitura promete concluir o trabalho só em 2017. Com um ritmo desse, é difícil para um morador do Pilar, no Bairro do Recife, confiar no Programa de Urbanização e Inclusão Social da comunidade ...</p>
+                    </div>
+                </div>
+
+                <div class="noticia">
+                    <div class="imagem-noticia"><img src="img/noticia7.jpg" alt=""></div>
+                    <div class="texto-noticia">
+                        <p class="sub-titulo">Notícia |   <span>28/07/2020 às 15:45</span></p>
+                        <h1><span class="titulo">Comunidade do Pilar ganha Upinha com serviços médicos e consultórios</span>
+                        </h1>
+                        <p>Foi inaugurada nesta terça-feira (28) a Upinha Nossa Senhora do Pilar. Localizada na comunidade do Pilar, no Recife Antigo, a unidade vai garantir ampliação dos serviços e novos espaços para os usuários da comunidade ...</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <div class="veja-mais"><button>Veja mais</button></div>
+        </div>
+    </main>
+
+
+    <div id="btnTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+    <script src="subir.js"></script>
+
+    <footer>
+        <img src="img/logofooter.png" alt="">
+
+        <div class="column">
+            <ul>
+                <li class="li-título">Navegação</li>
+                <li><a href="index.html">Home <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                <li><a href="programacao.html">Programação <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </li>
+                <li><a href="noticias.html">Notícias <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                <li><a href="podcasts.html">Podcasts <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <ul>
+                <li class="li-título">Sobre nós</li>
+                <li><a href="https://youtu.be/xtPEmyPV-T4" target="_blank">Pitch <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                <li><a href="radio.html">A Rádio <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                <li><a href="https://docs.google.com/document/d/1Y45Lh7ssJxO7NbwlTwpHL4qOjv15ZXZkiLPIafpuUF8/edit?usp=sharing" target="_blank">Nossa Equipe <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <ul>
+                <li class="li-título">Suporte</li>
+                <li><a href="contato.html">Contato <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                <li><a href="mailto:pvemverpilar@gmail.com" target="_blank">Gmail <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                <li><a href="#">FAQ <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-redes">
+            <a href="https://instagram.com/vemverpilar?igshid=ZjA0NjI3M2I=" target="_blank">
+                <i class="fa-brands fa-instagram"></i></a>
+            <a class href="mailto:pvemverpilar@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://youtube.com/channel/UCkRbbXbDnAkgNwmys_JSPRA" target="_blank">
+                <i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>

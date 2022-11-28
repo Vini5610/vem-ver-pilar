@@ -1,0 +1,593 @@
+@font-face {
+    font-family: 'Lovelo';
+    src: url('../fonts/Lovelo Black.otf');
+}
+
+@font-face {
+    font-family: 'PoppinsMedium';
+    src: url("../fonts/FontsFree-Net-Poppins-Medium.ttf");
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #030303 #ffffff;
+}
+
+  /* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #030303;
+    border-radius: 19px;
+    border: 3px solid #ffffff;
+}
+
+/* Formatando a Header */
+
+header{
+    height: 5vh;
+    background-color: #D9D9D9;
+}
+
+/* Formatando o topo da Header */
+ 
+.header-top{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #D9D9D9;
+}
+
+.header-top img{
+    width: 60px;
+
+    padding-left: 50px;
+}
+
+.header-top ul{
+    list-style-type: none;
+    display: flex;
+    font-family: PoppinsMedium;
+    font-size: 14px;
+    padding-right: 30px;
+
+}
+
+.header-top li{
+    padding-right: 20px;
+    color: #252525;
+    letter-spacing: 0.5px;
+}
+
+.header-top li a{
+    text-decoration: none;
+    color: #252525;
+
+    position: relative;
+}
+
+.header-top nav ul li a:after{
+    content: "";
+    position: absolute;
+    background-color: #EDA43D;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.header-top nav ul li a:hover{
+    color: black;
+}
+
+.header-top nav ul li a:hover:after{
+    width: 100%;
+}
+
+/* Menu Responsivo */
+
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 20px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/* Início do Ativo */
+
+.active{
+    text-decoration: none;
+    color: #000000;
+
+    position: relative;
+}
+
+.active:after{
+    content: "";
+    position: absolute;
+    background-color: #EDA43D;
+    height: 3px;
+    width: 85%;
+    left: 0;
+    bottom: -9px;
+}
+
+.active:hover:after{
+    width: 0;
+}
+
+/* Fim do Ativo*/
+
+.span1{
+    color: red;
+    animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate {
+    0% { opacity: 0; }
+
+    50% { opacity: 0.7; }
+
+    100% { opacity: 0; }
+}
+
+.header-top #divisor{
+    background-color: #474747;
+    height: 17px;
+    width: 1.5px;
+
+    padding: 0;
+    margin-right: 20px;
+}
+
+#btnTop{
+    text-decoration: none;
+    color: white;
+    background-color: #0a3753be;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    transition: .3s;
+    border-radius: 15px;
+}
+
+#btnTop:hover{
+    background-color: #2673A5;
+    transform: scale(1.03);
+}
+
+/* Conteúdo principal - a PROGRAMAÇÃO */
+
+.programacao-main{
+    padding: 20px;
+    font-family: PoppinsMedium;
+}
+
+.programacao-main section.dias {
+    
+    text-align: center;
+    font-family: 'Lovelo';
+    padding-top: 20px;
+}
+
+.programacao-main section.dias h1{
+    font-size: 2.5rem;
+    margin: 0;
+    margin-top: 40px;
+}
+
+.programacao-main section.dias ul{
+    display: flex;
+    
+    justify-content: center;
+    font-family: 'PoppinsMedium';
+    margin: 0 auto;
+    list-style: none;
+
+}
+
+.programacao-main section.dias ul li{
+    margin: 20px;
+    font-size: 1.2rem;
+    transition: 0.3s all ease;
+}
+
+/* Grifando a segunda feira como exemplo */
+
+.programacao-main section.dias ul li:first-child{
+    border-bottom: 5px solid #f39410;
+}
+
+.programacao-main section.dias ul li:hover{
+    border-bottom: 5px solid #f39410;
+    cursor: pointer;
+}
+
+/* Programação dos programas do dia */
+
+.programacao-main .programas .programa .foto{
+    width: 220px;
+    height: 220px;
+}
+
+.programacao-main .programas .programa .foto img{
+    width: 100%;
+    height: 100%;
+    border-radius: 220px;
+    object-fit: cover;
+}
+
+.programacao-main .programas .programa{
+    width: 70%;
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.programacao-main .programas .programa .descricao{
+    width: 68%;
+    text-align: left;
+}
+
+.programacao-main .programas .programa .descricao h2{
+    font-size: 1.8rem;
+}
+
+.programacao-main .programas .programa .descricao .apresentador{
+    color: #252525;
+    font-family: PoppinsMedium;
+    margin-top: -30px;
+    font-weight: bold;
+}
+
+.tag-pilar{
+    background: #2673A5;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-family: PoppinsMedium;
+    width: 10%;
+    border-radius: 20px;
+}
+
+.tag-alameda{
+    background: #f39410;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-family: PoppinsMedium;
+    width: 15%;
+    border-radius: 20px;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #474747;
+}
+
+footer img{
+    width: 200px;
+    height: 180px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+footer .column{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .column ul{
+    list-style-type: none;
+    padding-top: 80px;
+}
+
+footer .li-título{
+    font-size: 16px;
+    color: white;
+    font-family: PoppinsMedium;
+    user-select: none;
+}
+
+footer .column ul li a{
+    font-size: 14px;
+    font-family: PoppinsMedium;
+    text-decoration: none;
+    color: #a3a3a3;
+    transition: 0.2s all ease;
+}
+
+footer .column ul li a:hover{
+    color: #f1bc70;
+}
+
+footer .column ul li a i{
+    padding-left: 5px;
+}
+
+footer .footer-redes{
+    padding-top: 100px;
+}
+
+footer .footer-redes a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+footer .footer-redes a{
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    background-color: #a3a3a3;
+    color: white;
+    margin: 0 6px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    transition: 0.3s all ease;
+}
+
+footer .footer-redes a:hover{
+    background: #f39410;
+}
+
+footer .footer-redes a:hover > i{
+    transition: 0.4s all;
+}
+
+footer .footer-redes a:hover > .fa-instagram,
+footer .footer-redes a:hover > .fa-envelope{
+    transform: scale(1.1) rotate(-10deg);
+}
+
+
+footer .footer-redes a:hover > .fa-youtube,
+footer .footer-redes a:hover > .fa-facebook{
+    transform: scale(1.1) rotate(10deg);
+}
+
+@media (max-width: 858px){
+    header{
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .checkbtn{
+        display: block;
+        padding-right: 20px;
+    }
+
+    .header-top nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #D9D9D9;
+        top: 66px;
+        left: -120%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    .header-top nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-top nav ul li{
+        display: block;
+        margin: 30px 0;
+        padding-right: 50px;
+        line-height: 30px;
+    }
+
+    .header-top nav ul li:first-child{
+        display: none;
+    }
+
+    .header-top nav ul li a{
+        font-size: 20px;
+        color: #252525;
+    }
+
+    .header-top nav ul li a:hover{
+        color: #000000;
+    }
+
+    .header-top #divisor{
+        display: none;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    .active::after{
+        background: none;
+    }
+
+    .programacao-main{
+        padding: 10px;
+        padding-top: 14vh;
+        font-family: PoppinsMedium;
+    }
+    
+    .programacao-main section.dias {
+        padding-top: 20px;
+    }
+    
+    .programacao-main section.dias h1{
+        font-size: 1.5rem;
+        margin: 0 auto;
+        margin-left: 40px;
+    }
+    
+    .divisor-main::before, .divisor-main::after {
+        width: 25%;
+    }
+    
+    .programacao-main .dias{
+        margin-right: 30px;
+    }
+
+    .programacao-main section.dias ul li{
+        margin: 10px;
+        font-size: 0.9rem;
+    }
+    
+    .programacao-main section.dias ul li:first-child{
+        border-bottom: 3px solid #f39410;
+    }
+    
+    .programacao-main section.dias ul li:hover{
+        border-bottom: 3px solid #f39410;
+    }
+    
+    .programacao-main .programas .programa .foto{
+        width: 120px;
+        height: 120px;
+    }
+    
+    .programacao-main .programas .programa .foto img{
+        width: 100%;
+        height: 100%;
+        border-radius: 120px;
+        object-fit: cover;
+    }
+    
+    .programacao-main .programas .programa{
+        width: 90%;
+        margin: 0 auto;
+        align-items: center;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .programacao-main .programas .programa .descricao{
+        width: 60%;
+        padding-left: 20px;
+        text-align: left;
+    }
+    
+    .programacao-main .programas .programa .descricao h2{
+        font-size: 1rem;
+    }
+    
+    .programacao-main .programas .programa .descricao .apresentador{
+        color: #252525;
+        font-family: PoppinsMedium;
+        margin-top: -15px;
+        font-weight: bold;
+        font-size: 0.6rem;
+    }
+
+    .programacao-main .programas .programa .descricao .text{
+        font-size: 0.7rem;
+        line-height: 1rem;
+    }
+
+    .tag-pilar{
+        padding: 5px;
+        width: 20%;
+        font-size: 0.7rem;
+    }
+    
+    .tag-alameda{
+        padding: 5px;
+        width: 35%;
+        font-size: 0.7rem;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    footer img{
+        display: none;
+    }
+
+    footer .column ul{
+        padding-top: 34px;
+    }
+
+    footer .column ul li,
+    footer .column ul li a,
+    footer .column ul li i{
+        font-size: 11px;
+    }
+
+    footer .column ul li i{
+        display: none;
+    }
+
+    footer .footer-redes{
+        display: flex;
+        flex-direction: column;
+        padding-top: 38px;
+        padding-right: 10px;
+        padding-bottom: 30px;
+    }
+
+    footer .footer-redes a{
+        width: 22px;
+        height: 22px;
+        font-size: 13px;
+        margin-top: 3px;
+    }
+
+    #btnTop,
+    #btnTop i{
+        width: 0;
+        height: 0;
+        padding: 0;
+        margin: 0;
+        display: none;
+    }
+}
